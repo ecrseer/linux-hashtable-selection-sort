@@ -1,10 +1,10 @@
-from tp1.fila import Fila
-from tp1.pilha import Pilha
 import os
 import time
 from hashlib import sha256
 
-from tp1.tabela_hash import TabelaHash
+from fila import Fila
+from pilha import Pilha
+from tabela_hash import TabelaHash
 
 
 def start_tp1():
@@ -71,7 +71,7 @@ def operacoes_pilha(dados):
     recuperados = []
 
     for pos in posicoes:
-        if pos <= pilha.size():
+        if pos <= pilha.topo:
 
             aux_pilha = Pilha(len(dados))
             for _ in range(pilha.size() - pos):
@@ -128,3 +128,6 @@ def operacoes_tabela_hash(dados):
     tempo_remocao = time.time() - inicio_remocao
 
     return recuperados, tempo_remocao
+
+
+start_tp1()
