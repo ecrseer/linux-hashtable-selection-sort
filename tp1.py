@@ -74,7 +74,7 @@ def operacoes_pilha(dados):
         if pos <= pilha.topo:
 
             aux_pilha = Pilha(len(dados))
-            for _ in range(pilha.size() - pos):
+            for _ in range(pilha.topo - pos):
                 aux_pilha.push(pilha.pop())
             recuperados.append(pilha.peek())
             while not aux_pilha.is_empty():
@@ -97,7 +97,7 @@ def operacoes_fila(dados):
     recuperados = []
 
     for pos in posicoes:
-        if pos <= fila.size():
+        if pos <= fila.tamanho_atual:
             for _ in range(pos - 1):
                 fila.enqueue(fila.dequeue())
             recuperados.append(fila.peek())
