@@ -94,4 +94,4 @@ def operacoes_tabela_hash(dados):
     return recuperados, tempo_remocao
 
 
-start_tp1()
+
