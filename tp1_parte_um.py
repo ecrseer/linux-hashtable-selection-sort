@@ -27,7 +27,7 @@ def mostra_media_bubble_sort(lista_arquivos):
 
     media_tempo = (tempo_total + tempo_total_dois) / 2
     print(f"""Bubble Sort - Ordenando lista de arquivos:
-    Média de tempo: {media_tempo} segundos.
+    Média de tempo: {media_tempo:.8f} segundos.
     -------------------""")
     return media_tempo
 
@@ -73,7 +73,7 @@ def mostra_media_quick_sort(lista_arquivos):
 
     media_tempo = (tempo_total + tempo_total_dois) / 2
     print(f"""Quick Sort - Ordenando lista de arquivos:
-    Média de tempo: {media_tempo} segundos.
+    Média de tempo: {media_tempo:.8f} segundos.
     -------------------""")
     return media_tempo
 
@@ -144,3 +144,5 @@ def gera_dados_grafico(lista_arquivos, tamanho=700):
     bubble = mostra_media_bubble_sort(lista_arquivos[:tamanho])
     quick = mostra_media_quick_sort(lista_arquivos[:tamanho])
     return bubble, quick
+
+tp1_parte_um()

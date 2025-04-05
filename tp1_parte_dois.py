@@ -116,3 +116,5 @@ def inicializa_hashtable(dados):
     for chave, item in enumerate(dados):
         tabela_hash.add(chave, item)
     return tabela_hash
+
+tp1_parte_dois()
